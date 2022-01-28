@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Sample</title>
+    <style>
+        body{
+            padding: 2em;
+        }
+        .hearderContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center; 
+            background-color: tomato;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .footerContainer{
+            display:flex;
+            flex-flow: column wrap;
+            align-content: center;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(119, 182, 38);
+        }
+        .mainContainer{
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;text-align: center;
+        }
+        .maincontentItem{
+            background-color: deepskyblue;
+            flex: 3 0 0;
+            order: 2;
+            text-align: left;
+        }
+        
+        article{
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+           
+        }
+        .sideBarItem{
+            flex: 1 0 0;
+        }
+        .sideLeftItem{
+            background-color: gold;
+            order: 1;
+        }
+        .sideRightItem{
+            background-color: hotpink;
+            order: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="hearderContainer"><h1>Header</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="maincontentItem">
+            <article>
+                <h2>First article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis illum sed ullam excepturi atque ipsum asperiores! Optio libero ullam, labore veritatis magni eaque earum aperiam, sequi praesentium laborum incidunt!32</p>
+            </article>
+            <article>
+                <h2>Second article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis illum sed ullam excepturi atque ipsum asperiores! Optio libero ullam, labore veritatis magni eaque earum aperiam, sequi praesentium laborum incidunt!32</p>
+            </article>
+            <article>
+                <h2>Third article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis illum sed ullam excepturi atque ipsum asperiores! Optio libero ullam, labore veritatis magni eaque earum aperiam, sequi praesentium laborum incidunt!32</p>
+            </article>
+        </section>
+        <section class="sideBarItem sideLeftItem">Left Side Item</section>
+        <section class="sideBarItem sideRightItem">Right Side Item</section>
+
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+</html>
